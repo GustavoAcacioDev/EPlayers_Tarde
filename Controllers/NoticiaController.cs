@@ -11,26 +11,26 @@ using System.IO;
 
 namespace Eplayers_Tarde.Controllers
 {
-    public class EquipeController : Controller
+    public class NoticiaController : Controller
     {
-        
-        Equipe equipeModel = new Equipe();
+       Noticias noticiasModel = new Noticias();
         public IActionResult Index()
         {
-            ViewBag.Equipes = equipeModel.ReadAll();
+            ViewBag.Noticias = noticiasModel.ReadAll();
             return View();
         }
 
         public IActionResult Cadastrar(IFormCollection form)
         {
-            Equipe equipe = new Equipe();
-            equipe.IdEquipe = Int32.Parse( form["IdEquipe"] );
-            equipe.Nome = form["Nome"];
-            equipe.Imagem = form["Imagem"];
+            Noticias noticia = new Noticias();
+            noticia.IdNoticia = Int32.Parse( form["IdNoticia"] );
+            noticia.Titulo = form["Titulo"];
+            noticia.Texto = form["Texto"];
+            noticia.Imagem = form["Imagem"];
 
-            //Inicio Upload
+            
             var file    = form.Files[0];
-            var folder  = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Equipes");
+            var folder  = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Not");
 
             if(file != null)
             {
@@ -43,29 +43,21 @@ namespace Eplayers_Tarde.Controllers
                 {  
                     file.CopyTo(stream);  
                 }
-                equipe.Imagem   = file.FileName;
+                noticia.Imagem   = file.FileName;
             }
             else
             {
-                equipe.Imagem   = "padrao.png";
+                noticia.Imagem   = "padrao.png";
             }
-
-            equipeModel.Create(equipe);
+            noticiasModel.Create(noticia);
             
 
-            ViewBag.Equipes = equipeModel.ReadAll();
-            return LocalRedirect("~/Equipe");
+            ViewBag.Noticias = noticiasModel.ReadAll();
+            return LocalRedirect("~/Noticia");
 
 
         }
         
-        [Route("[controller]/{id}")]
-        public IActionResult Excluir(int id)
-        {
-            equipeModel.Delete(id);
-            ViewBag.Equipes = equipeModel.ReadAll();
-            return LocalRedirect("~/Equipe");
-        }
         
     }
 }

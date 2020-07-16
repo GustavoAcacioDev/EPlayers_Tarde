@@ -36,3 +36,4 @@ C:\Users\cliente\Desktop\Senai\Eplayers_Tarde\obj\Debug\netcoreapp3.1\Eplayers_T
 C:\Users\cliente\Desktop\Senai\Eplayers_Tarde\obj\Debug\netcoreapp3.1\Eplayers_Tarde.pdb
 C:\Users\cliente\Desktop\Senai\Eplayers_Tarde\obj\Debug\netcoreapp3.1\Eplayers_Tarde.genruntimeconfig.cache
 C:\Users\cliente\Desktop\Senai\Eplayers_Tarde\obj\Debug\netcoreapp3.1\Eplayers_Tarde.csproj.CopyComplete
+C:\Users\cliente\Desktop\Senai\Eplayers_Tarde\obj\Debug\netcoreapp3.1\Razor\Views\Noticia\Index.cshtml.g.cs
