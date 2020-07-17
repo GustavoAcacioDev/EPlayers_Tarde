@@ -30,7 +30,7 @@ namespace Eplayers_Tarde.Controllers
 
             
             var file    = form.Files[0];
-            var folder  = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Not");
+            var folder  = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Noticia");
 
             if(file != null)
             {
@@ -58,6 +58,12 @@ namespace Eplayers_Tarde.Controllers
 
         }
         
-        
+        [Route("[controller]/{id}")]
+        public IActionResult Excluir(int id)
+        {
+            noticiasModel.Delete(id);
+            ViewBag.Noticias = noticiasModel.ReadAll();
+            return LocalRedirect("~/Noticia");
+        }
     }
 }

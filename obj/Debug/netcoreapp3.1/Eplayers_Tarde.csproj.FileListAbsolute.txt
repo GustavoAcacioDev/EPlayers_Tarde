@@ -21,7 +21,6 @@ C:\Users\cliente\Desktop\Senai\Eplayers_Tarde\obj\Debug\netcoreapp3.1\Eplayers_T
 C:\Users\cliente\Desktop\Senai\Eplayers_Tarde\obj\Debug\netcoreapp3.1\Eplayers_Tarde.RazorCoreGenerate.cache
 C:\Users\cliente\Desktop\Senai\Eplayers_Tarde\obj\Debug\netcoreapp3.1\Razor\Views\Equipe\Index.cshtml.g.cs
 C:\Users\cliente\Desktop\Senai\Eplayers_Tarde\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\cliente\Desktop\Senai\Eplayers_Tarde\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\cliente\Desktop\Senai\Eplayers_Tarde\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\cliente\Desktop\Senai\Eplayers_Tarde\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\cliente\Desktop\Senai\Eplayers_Tarde\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
